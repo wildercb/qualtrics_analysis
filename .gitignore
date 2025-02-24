@@ -2,7 +2,7 @@ temp.ipynb
 test.json 
 
 __pycache__/
-notebooks/extra/
+# notebooks/extra/
 
 /papers/
 papers/
