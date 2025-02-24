@@ -3,7 +3,7 @@ import os
 
 project_root = os.path.abspath(os.path.join(os.getcwd(), ".."))
 data_dir = os.path.join(project_root, "data")
-survey_data = os.path.join(data_dir, "ai_study_finalized.csv")
+survey_data = os.path.join(data_dir, "survey_finalized.csv")
 
 familiarity_levels = [
     'Extremely Familiar',
@@ -94,7 +94,7 @@ role_names = {
 # Demographics and the column number they are found in ai_study_finalized
 demographics = {
     'Location': {
-        'column': 28,
+        'column': 17,
         'mapping': {
             'North America': 'North America',
             'Central/South America': 'Other',
@@ -172,6 +172,19 @@ demographics = {
     'Gender': {
         'column': 19,
         'mapping': None  # Use raw values for Gender
+    }
+}
+
+
+# Demographics and the column number they are found in ai_study_finalized
+demographics = {
+    'Location': {
+        'column': 17,
+        'mapping': {
+            'north america': 'North America',
+            'europe': 'Europe',
+            'asia': 'Asia',
+        }
     }
 }
 
