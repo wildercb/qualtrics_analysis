@@ -96,6 +96,13 @@ principle_columns = {
     'A': list(range(46, 55)),  # Columns 46-54 for Track A
     'B': list(range(79, 88))   # Columns 79-87 for Track B
 }
+
+principle_columns = {
+    'A': list(range(46, 55)),  # Columns 46-54 for Track A
+    'B': list(range(79, 88))   # Columns 79-87 for Track B
+}
+
+privacy_value_columns = list(range(23, 41))
 regulation_columns = list(range(220, 229))
 
 role_names = {
