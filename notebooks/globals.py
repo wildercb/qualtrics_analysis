@@ -13,6 +13,23 @@ familiarity_levels = [
     'Not Familiar At All'
 ]
 
+importance_levels = [
+    'Extremely Important',
+    'Moderately Important',
+    'Somewhat Important',
+    'Slightly Import',
+    'Not Familiar At All',
+]
+
+importance_mapping = [
+    'Extremely Important': 5,
+    'Moderately Important': 4,
+    'Somewhat Important': 3,
+    'Slightly Import': 2,
+    'Not Familiar At All': 1
+]
+
+
 familiarity_mapping = {
     'Extremely Familiar': 5,
     'Moderately Familiar': 4,
