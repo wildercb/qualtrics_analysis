@@ -1,4 +1,4 @@
-import os 
+import os
 
 
 project_root = os.path.abspath(os.path.join(os.getcwd(), ".."))
@@ -108,90 +108,79 @@ demographics = {
             'Other, please specify': 'Other'
         }
     },
-    'Company Type': {
-        'column': 26,
+    'Age': {
+        'column': 142,
         'mapping': {
-            'Multi-national Corporate': 'Multi-national',
-            'Startup/Small Business': 'Startup/Small',
-            'Academic Institution/Research Center': 'Academic/Research',
-            'Government': 'Government',
-            'Individual': 'Individual',
-        }
-    },
-    'Role': {
-        'column': 30,
-        'mapping': {
-            'Administrative role (CEO, Chief Technical Officer, Chief Operating Officer, Chief Information Officer)': 'AI Manager',
-            'AI Manager': 'AI Manager',
-            'Requirements Analyst or Engineer': 'Requirements analyst',
-            'Scrum Master, Product Manager, or Project Manager': 'Requirements analyst',
-            'AI Engineer or Developer': 'AI developers',
-            '(Software) Developer, Designer, or Architect': 'AI developers',
-            'Data Scientist or Data Analyst': 'AI developers',
-            'Information Security Analyst or Engineer': 'Security/Privacy',
-            'Information Privacy Analyst or Engineer': 'Security/Privacy',
-            'AI Ethicist': 'AI Researcher, AI Ethicist',
-            'AI Researcher': 'AI Researcher, AI Ethicist',
-            '(Software) Quality Assurance Engineer or Tester': 'QA and Maintenance',
-            'Other, please specify:': 'Other',
-            'IT': 'Other'
-        }
-    },
-    'Dev Experience': {
-        'column': 32,
-        'mapping': {
-            'None': 'None',
-            '1-2 Years': '1-2 Years',
-            '2-5 Years': '2-5 Years',
-            '5-10 Years': '5-10 Years',
-            '10+ Years': '10+ Years'
-        }
-    },
-    'Education': {
-        'column': 21,
-        'mapping': {
-            "High School Degree": "High School Degree",
-            "Bachelor's Degree": "Bachelor's Degree",
-            "Master's Degree (i.e., MSc., M.A., etc.)": "Graduate Education",
-            "MBA (Master of Business Administration)": "Graduate Education",
-            "Graduate Certificates": "Graduate Education",
-            "Ph.D.": "Ph.D.",
-            "Other, please specify": "Other"
-        }
-    },
-    'Company Size': {
-        'column': 25,
-        'mapping': {
-            '1-5 Employees': '1-5 Employees',
-            '6-20 Employees': '6-20 Employees',
-            '21-50 Employees': '21-50 Employees',
-            '51-100 Employees': '51-100 Employees',
-            '101+ Employees': '100+ Employees'
+            '18-24': '18-24',
+            '25-34': '25-34'',
+            '35-44': '35-44',
+            '45-54': '45-54',
+            '55-64': '55-64',
+            '65 and above': '65+',
+            'I prefer not to say': 'Prefer Not to Say',
         }
     },
     'Gender': {
-        'column': 19,
-        'mapping': None  # Use raw values for Gender
-    }
-}
-
-
-# Demographics and the column number they are found in ai_study_finalized
-demographics = {
-    'Location': {
-        'column': 17,
-        'mapping': {
-            'north america': 'North America',
-            'europe': 'Europe',
-            'asia': 'Asia',
+    'column': 'Q13.2',
+    'mapping': {
+        'Male': 'Male',
+        'Female': 'Female',
+        'Non-Binary': 'Non-Binary',
+        'Other': 'Other',
+        'Prefer not to answer': 'Prefer not to answer'
+        }
+    },
+    'Education': {
+            'column': 'Q13.3',
+            'mapping': {
+                'High School': 'High School',
+                'Associate Degree': 'Associate Degree',
+                'Bachelors Degree': 'Bachelors Degree',
+                'Graduate Degree': 'Graduate Degree',
+                'Professional Degree': 'Professional Degree',
+                'I prefer not to say': 'I prefer not to say',
+                'Others (Please Specify)': 'Others (Please Specify)'
+            }
+        },
+        'Education_Field': {
+    'column': 'Q13.4',
+    'mapping': {
+        'Business Administration': 'Business Administration',
+        'Computer Science': 'Computer Science',
+        'Computer and Electrical Engineering': 'Computer and Electrical Engineering',
+        'Data Science': 'Data Science',
+        'Information Science': 'Information Science',
+        'Information Security': 'Information Security',
+        'Information Technology': 'Information Technology',
+        'Law': 'Law',
+        'Other (please specify)': 'Other (please specify)'
+        }
+    },
+    'Religion': {
+    'column': 'Q13.5',
+    'mapping': {
+        'Christianity': 'Christianity',
+        'Islam': 'Islam',
+        'Hinduism': 'Hinduism',
+        'Buddhism': 'Buddhism',
+        'Judaism': 'Judaism',
+        'Others (Please Specify)': 'Others (Please Specify)',
+        'None': 'None',
+        'Prefer not to say': 'Prefer not to say'
+        }
+    },
+    'Religious_Importance': {
+    'column': 'Q13.6',
+    'mapping': {
+        'Not Important': 'Not Important',
+        'Slightly Important': 'Slightly Important',
+        'Very Important': 'Very Important',
+        'Prefer not to say': 'Prefer not to say',
+        'Others (Please Specify)': 'Others (Please Specify)'
         }
     }
 }
 
 SPECIAL_PHRASES = [
-    "other, please specify", "Master's Degree (i.e., MSc., M.A., etc.)", "Information Science (e.g., IT or MIS)", "Administrative role (CEO, Chief Technical Officer, Chief Operating Officer, Chief Information Officer)", "Scrum Master, Product Manager, or Project Manager", "(Software) Developer, Designer, or Architect", "Chatbots, Personal Assistants or Recommender Systems", "Programming Analysis (e.g., Code Completion or Code Generation)", "Model provider APIs, i.e., OpenAI, Anthropic, DeepInfra, LLama", "RNN, LSTM / GRU", "Clean Data to Remove, Mitigate, or Minimize Biases", "Integrating Privacy Enhancing Technologies (PETs) in AI systems (e.g., differential privacy algorithms, federated learning models, etc.)", "Continuously, as part of an ongoing process", "Professional organizations (e.g., ACM, IEEE, ACL, AAAI, etc.)", 
+    "other, please specify", "Master's Degree (i.e., MSc., M.A., etc.)", "Information Science (e.g., IT or MIS)", "Administrative role (CEO, Chief Technical Officer, Chief Operating Officer, Chief Information Officer)", "Scrum Master, Product Manager, or Project Manager", "(Software) Developer, Designer, or Architect", "Chatbots, Personal Assistants or Recommender Systems", "Programming Analysis (e.g., Code Completion or Code Generation)", "Model provider APIs, i.e., OpenAI, Anthropic, DeepInfra, LLama", "RNN, LSTM / GRU", "Clean Data to Remove, Mitigate, or Minimize Biases", "Integrating Privacy Enhancing Technologies (PETs) in AI systems (e.g., differential privacy algorithms, federated learning models, etc.)", "Continuously, as part of an ongoing process", "Professional organizations (e.g., ACM, IEEE, ACL, AAAI, etc.)",
 ]
-
-
-
-
