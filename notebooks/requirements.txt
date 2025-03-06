@@ -1,0 +1,11 @@
+ipython==8.12.3
+matplotlib==3.10.1
+numpy==2.2.3
+pandas==2.2.3
+plotly==5.24.1
+python_docx==1.1.2
+scikit_learn==1.6.1
+scipy==1.15.2
+seaborn==0.13.2
+selenium==4.29.0
+tabulate==0.9.0
