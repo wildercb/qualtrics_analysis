@@ -2,5 +2,6 @@
     "files.associations": {
         ".fantomasignore": "ignore",
         "plyconfig.json": "jsonc"
-    }
+    },
+    "python.pythonPath": "/usr/bin/python3"
 }
