@@ -21,13 +21,13 @@ importance_levels = [
     'Not Familiar At All',
 ]
 
-importance_mapping = [
+importance_mapping = {
     'Extremely Important': 5,
     'Moderately Important': 4,
     'Somewhat Important': 3,
     'Slightly Import': 2,
     'Not Familiar At All': 1
-]
+}
 
 
 familiarity_mapping = {
@@ -118,7 +118,7 @@ role_names = {
 # Demographics and the column number they are found in ai_study_finalized
 demographics = {
     'Location': {
-        'column': 17,
+        'column': 'location',
         'mapping': {
             'North America': 'North America',
             'Central/South America': 'Other',
@@ -133,10 +133,10 @@ demographics = {
         }
     },
     'Age': {
-        'column': 142,
+        'column': 'Q13.1',
         'mapping': {
             '18-24': '18-24',
-            '25-34': '25-34'',
+            '25-34': '25-34',
             '35-44': '35-44',
             '45-54': '45-54',
             '55-64': '55-64',
